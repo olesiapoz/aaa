@@ -12,3 +12,6 @@ func init() {
 	os.Setenv("MONGO_HOST", "192.168.0.3:27017")
 
 }
+func Load(filenames ...string) error {
+	return loadenv(false, filenames...)
+}
